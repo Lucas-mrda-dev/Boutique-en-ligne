@@ -22,7 +22,8 @@ users = []
     last_name: Faker::Name.last_name,
     description: Faker::Quote.famous_last_words,
     email: Faker::Internet.unique.email,
-    encrypted_password: "password#{i + 1}", # ⚠️ si tu n’as pas has_secure_password
+    password: "password#{i + 1}",
+    password_confirmation: "password#{i + 1}",
     created_at: Time.now,
     updated_at: Time.now
   )
