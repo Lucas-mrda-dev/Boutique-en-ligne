@@ -42,6 +42,10 @@
   </div>
 
   <div>
+    <%= form.hidden_field :admin, value: @event.admin_id %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

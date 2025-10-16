@@ -1,14 +1,14 @@
 <ul>
     <h1> Découvre les évenements de malade du coin </h1>
-
-      <%= link_to "Crée ton evenement", new_event_path %>
     
-    <p> <% @events.each do |event| %>
-      <%= render event %>
-      <p>
-        <%= link_to "Show this event", event %>
-      </p>
-    <% end %> </p>
+    <p> 
+      <% @events.each do |event| %>
+        <%= render event %>
+        <p>
+          <%= link_to "Show this event", event %>
+        </p>
+      <% end %> 
+    </p>
 
 
 
